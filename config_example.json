@@ -1,0 +1,22 @@
+{
+  "database": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "username": "root",
+    "password": "fuckyou123",
+    "database": "go",
+    "options": "loc=Local&charset=utf8mb4&parseTime=true"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "password": "",
+    "db": 0
+  },
+  "minio": {
+    "endpoint": "minio.cxgys.com",
+    "accesskey": "8EP2OK44229HSZNKRH6E",
+    "secretkey": "dBruumnHRJZ5Gve66USmQPsniyvaU91bbAIi3hZU"
+  },
+  "host": "https://oss.cxgys.com"
+}
