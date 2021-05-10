@@ -2,6 +2,7 @@ package initialization
 
 import (
 	"fmt"
+
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/cast"
 	"github.com/spf13/viper"

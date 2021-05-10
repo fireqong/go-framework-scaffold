@@ -2,8 +2,9 @@ package sessions
 
 import (
 	"errors"
-	"gorm.io/gorm"
 	"time"
+
+	"gorm.io/gorm"
 )
 
 type MysqlSessionHandler struct {
@@ -68,11 +69,7 @@ func (m *MysqlSessionHandler) Has(key string) bool {
 func (m *MysqlSessionHandler) Destroy(key string) bool {
 	result := m.Client.Where("`key` = ?", key).Unscoped().Delete(&SessionModel{})
 
-	if errors.Is(result.Error, gorm.ErrRecordNotFound) {
-		return false
-	}
-
-	return true
+	return !errors.Is(result.Error, gorm.ErrRecordNotFound)
 }
 
 func (m *MysqlSessionHandler) Migrate() error {

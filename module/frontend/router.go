@@ -1,8 +1,9 @@
 package frontend
 
 import (
-	"github.com/gin-gonic/gin"
 	"main/module/frontend/controller"
+
+	"github.com/gin-gonic/gin"
 )
 
 func InitRouter(router *gin.Engine) {

@@ -1,9 +1,10 @@
 package initialization
 
 import (
-	"github.com/gin-gonic/gin"
 	"main/module/api"
 	"main/module/frontend"
+
+	"github.com/gin-gonic/gin"
 )
 
 func App() *gin.Engine {

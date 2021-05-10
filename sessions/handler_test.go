@@ -2,9 +2,10 @@ package sessions
 
 import (
 	"context"
-	"github.com/go-redis/redis/v8"
 	"testing"
 	"time"
+
+	"github.com/go-redis/redis/v8"
 )
 
 func TestSession_All(t *testing.T) {

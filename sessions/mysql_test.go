@@ -1,10 +1,11 @@
 package sessions
 
 import (
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
 	"testing"
 	"time"
+
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 )
 
 func TestMysqlSessionHandler_Migrate(t *testing.T) {

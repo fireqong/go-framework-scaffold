@@ -1,9 +1,10 @@
 package middleware
 
 import (
-	"github.com/gin-gonic/gin"
 	"main/kernel"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func Auth(ctx *gin.Context) {

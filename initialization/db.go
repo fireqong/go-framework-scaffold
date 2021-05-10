@@ -2,6 +2,7 @@ package initialization
 
 import (
 	"fmt"
+
 	"github.com/spf13/cast"
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"

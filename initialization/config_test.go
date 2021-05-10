@@ -2,9 +2,10 @@ package initialization
 
 import (
 	"fmt"
-	"github.com/spf13/viper"
 	"path/filepath"
 	"testing"
+
+	"github.com/spf13/viper"
 )
 
 func TestConfig(t *testing.T) {

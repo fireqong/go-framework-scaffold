@@ -2,11 +2,12 @@ package admin
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"main/kernel"
 	"main/middleware"
 	"main/module/admin/controller"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func InitRouter(router *gin.Engine) {

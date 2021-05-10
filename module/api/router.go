@@ -1,9 +1,10 @@
 package api
 
 import (
+	"main/middleware"
+
 	"github.com/gin-contrib/location"
 	"github.com/gin-gonic/gin"
-	"main/middleware"
 )
 
 func InitRouter(router *gin.Engine) {

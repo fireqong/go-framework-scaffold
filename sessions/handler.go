@@ -2,8 +2,9 @@ package sessions
 
 import (
 	"encoding/json"
-	"github.com/satori/go.uuid"
 	"time"
+
+	uuid "github.com/satori/go.uuid"
 )
 
 type SessionHandler interface {
@@ -56,11 +57,7 @@ func (s *Session) Set(key, value string) {
 
 func (s *Session) Has(key string) bool {
 	value := s.Get(key)
-	if value == "" {
-		return false
-	}
-
-	return true
+	return value != ""
 }
 
 func (s *Session) Destroy(key string) bool {

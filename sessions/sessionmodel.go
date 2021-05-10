@@ -1,8 +1,9 @@
 package sessions
 
 import (
-	"gorm.io/gorm"
 	"time"
+
+	"gorm.io/gorm"
 )
 
 type SessionModel struct {
